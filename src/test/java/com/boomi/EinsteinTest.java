@@ -53,10 +53,10 @@ public class EinsteinTest
         // create the signing utility class
         EinsteinHttpUtility util = EinsteinHttpUtility.GetInstance();
         Probability prob = util.getProbability("https://api.einstein.ai/v2/vision/predict",
-                                                "Bearer 4GOSA7L6FDNRWMDLQ6WULMCHEASDJQ6FHHFVN2KP4TC6STW6RTIMVAJ6A24UOZ2L75PYB7DWNWF7PC3WJOPBBVMOFOQ2N37PX6SGEKA",
-                                                "GPFNTBB64LFHGMQXPEMYFS3KKY",
-                                                "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAeQAAAAJDY2OTQwOGUyLTMwNWItNDRhNi05NzJiLThmYjdjZTY2MTFmNg.jpg",
-                                                "andytillo");
+                                                "AUTHTOKEN",
+                                                "MODELID FROM EINSTEIN",
+                                                "IMAGE URL",
+                                                "LABEL OF DATASET PROBABILITY");
 
         System.out.println("\n<TEST RESULT> Returned Label :" + prob.label + " Returned Probability :"+ Float.toString(prob.probability));
 
